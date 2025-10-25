@@ -37,9 +37,9 @@ OpenROAD automates all backend stages of VLSI physical design, including:
 git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts
 cd OpenROAD-flow-scripts
 ```
-<img width="1074" height="526" alt="1" src="https://github.com/user-attachments/assets/7388f708-829d-4667-a639-f2a8f40c9bdc" />
+<p align="center"><img src="./ASSETS/1.png" width="700" alt="image 1"/></p>
 
-<img width="1074" height="526" alt="2" src="https://github.com/user-attachments/assets/aa9fce0f-36ee-42d0-8511-cbdc8959f0f2" />
+<p align="center"><img src="./ASSETS/2.png" width="700" alt="image 2"/></p>
 
 
 ### 🗂 Directory Map of the OpenROAD-flow-scripts
@@ -84,13 +84,13 @@ cd OpenROAD-flow-scripts
 sudo ./setup.sh
 
 ```
-<img width="1032" height="509" alt="3" src="https://github.com/user-attachments/assets/d2ad825a-4a71-4de1-9f17-a963ed92be2c" />
+<p align="center"><img src="./ASSETS/3.png" width="700" alt="image 3"/></p>
 
 This installs all major dependencies (Yosys, Magic, Netgen, etc.).
 
 🖼️ Example:
 
-<img width="1074" height="526" alt="4" src="https://github.com/user-attachments/assets/dd04a200-e75b-4b8c-b445-7f3486ab1140" />
+<p align="center"><img src="./ASSETS/4.png" width="700" alt="image 4"/></p>
 
 
 ---
@@ -101,7 +101,7 @@ This installs all major dependencies (Yosys, Magic, Netgen, etc.).
 ./build_openroad.sh --local
 
 ```
-<img width="1074" height="526" alt="5" src="https://github.com/user-attachments/assets/2173a65e-6865-4bc5-ba98-554b3d542562" />
+<p align="center"><img src="./ASSETS/5.png" width="700" alt="image 5"/></p>
 
 
 ---
@@ -174,9 +174,9 @@ cd ~/Desktop/OpenROAD_Week5/OpenROAD-flow-scripts
 ```
 
 
-<img width="1064" height="471" alt="6" src="https://github.com/user-attachments/assets/55a3fde0-9a6c-46a6-a75c-1f35f8550f03" />
+<p align="center"><img src="./ASSETS/6.png" width="700" alt="image 6"/></p>
 
-<img width="1051" height="548" alt="7" src="https://github.com/user-attachments/assets/34506596-ff09-4fcc-9356-b18d26a0636b" />
+<p align="center"><img src="./ASSETS/7.png" width="700" alt="image 7"/></p>
 
 
 
@@ -192,9 +192,9 @@ yosys -help
 openroad -help
 
 ```
-<img width="1108" height="620" alt="8" src="https://github.com/user-attachments/assets/e3368158-02b7-4a40-b1af-39ba75fb4d0a" />
+<p align="center"><img src="./ASSETS/8.png" width="700" alt="image 8"/></p>
 
-<img width="1143" height="620" alt="9" src="https://github.com/user-attachments/assets/877502c8-7540-4a38-9282-0c236eec0bb3" />
+<p align="center"><img src="./ASSETS/9.png" width="700" alt="image 9"/></p>
 
 
 ---
@@ -208,14 +208,14 @@ make
 ```
 
 This executes the default test flow and generates floorplan + placement results.
-<img width="1143" height="620" alt="10" src="https://github.com/user-attachments/assets/69d1873d-3d0e-4c93-807e-2668788bec64" />
+<p align="center"><img src="./ASSETS/10.png" width="700" alt="image 10"/></p>
 
-<img width="1143" height="620" alt="11" src="https://github.com/user-attachments/assets/27f7cb33-5891-47e7-bd68-b1797f15ec15" />
+<p align="center"><img src="./ASSETS/11.png" width="700" alt="image 11"/></p>
 
-<img width="1143" height="620" alt="12" src="https://github.com/user-attachments/assets/706001dd-1560-47a2-bf09-47d880046f5d" />
+<p align="center"><img src="./ASSETS/12.png" width="700" alt="image 12"/></p>
 
 
-<img width="1143" height="620" alt="13" src="https://github.com/user-attachments/assets/bbd00437-0ffb-4257-8b7e-0a7894251921" />
+<p align="center"><img src="./ASSETS/13.png" width="700" alt="image 13"/></p>
 
 ---
 
@@ -227,9 +227,9 @@ make gui_final
 ```
 
 Opens the OpenROAD GUI to visualize layout.
-<img width="1920" height="1200" alt="14" src="https://github.com/user-attachments/assets/1ea71449-6e0b-48cf-b54e-a7c6810c26ab" />
+<p align="center"><img src="./ASSETS/14.png" width="700" alt="image 14"/></p>
 
-<img width="1920" height="1200" alt="15" src="https://github.com/user-attachments/assets/04f19949-de9e-4491-807f-0bc435e6ffc8" />
+<p align="center"><img src="./ASSETS/15.png" width="700" alt="image 15"/></p>
 
 
 ---

@@ -1,5 +1,3 @@
-# week5
-
 # 🚀 Week 5 — OpenROAD Flow Setup, Floorplan & Placement
 
 🌟 This week marks the transition from **transistor-level SPICE design (Week 4)** to **backend physical implementation** using **OpenROAD** — a complete open-source RTL-to-GDSII flow.

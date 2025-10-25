@@ -1,3 +1,23 @@
+<h1 align="center">🔳 RISC-V SoC Tapeout Program — Week 5️⃣</h1>
+
+<p align="center"><img src="./ASSETS/0.png" width="500" alt="OpenROAD banner"/></p>
+
+---
+
+<div align="center">
+
+# 🚀 Week 5 — OpenROAD Flow Setup, Floorplan & Placement
+
+🌟 This is **Week 5** of the **VSD RISC-V SoC Tapeout Program** —  
+I transitioned from **SPICE-level transistor design (Week 4)** to **backend physical implementation** using **OpenROAD**.  
+I explored the **OpenROAD-Flow-Scripts (ORFS)** setup, performed **floorplanning and placement**,  
+and understood how **logical netlists are transformed into physical layouts**.
+
+</div>
+
+---
+
+
 # 🚀 Week 5 — OpenROAD Flow Setup, Floorplan & Placement
 
 🌟 This week marks the transition from **transistor-level SPICE design (Week 4)** to **backend physical implementation** using **OpenROAD** — a complete open-source RTL-to-GDSII flow.
@@ -389,3 +409,119 @@ Inside `flow/` directory:
 ✅ Explored GUI for layout visualization
 
 ---
+
+
+## 📒 Key Learnings — Week 5
+
+### 🧩 OpenROAD Flow Setup, Build & Automation
+
+---
+
+### **📌** Environment Configuration & Dependency Setup
+
+- Installed and configured complete **OpenROAD-flow-scripts** environment
+- Ensured proper installation of dependencies including:
+    
+    ✅ `build-essential`, `cmake`, `tcl`, `libx11-dev`, `libxrender1`, `libxext6`
+    
+- Verified **gcc**, **g++**, and **make** versions for build compatibility
+- Cloned repository and initialized submodules for consistent flow structure
+
+---
+
+### **📌** OpenROAD Compilation & Build Process
+
+- Navigated to `OpenROAD-flow-scripts` directory
+- Successfully executed build process using:
+    
+    ```
+    ./build_openroad.sh --local
+    
+    ```
+    
+- Debugged issues related to missing `spdlog`, `gtest`, and path errors
+- Verified successful build by generating the OpenROAD binary in `build/src/openroad`
+- Confirmed tool access with:
+    
+    ```
+    ./build/src/openroad --version
+    
+    ```
+    
+
+---
+
+### **📌** Understanding OpenROAD Architecture
+
+- Studied hierarchical flow of **RTL-to-GDS** automation
+- Explored integration of:
+    - `Yosys` for synthesis
+    - `OpenSTA` for timing analysis
+    - `TritonFloorplan`, `TritonCTS`, and `TritonRoute` for layout steps
+- Learned about OpenROAD’s Tcl-based scripting environment and flow templates
+
+---
+
+### **📌** Flow Customization & Configuration
+
+- Edited configuration files inside `flow/designs/sky130hd/`
+- Updated parameters such as `DESIGN_NAME`, `VERILOG_FILES`, `CLOCK_PORT`, and `CLOCK_PERIOD`
+- Understood directory structure:
+    - `flow/designs/` → User design setup
+    - `flow/results/` → Final GDSII outputs
+    - `flow/logs/` → Step-by-step execution logs
+
+---
+
+### **📌** Debugging Build & Log Issues
+
+- Encountered errors such as:
+    
+    ❌ Missing `build.log` file
+    
+    ❌ Non-existent `/usr/src/gtest` directory
+    
+- Fixed by installing required test packages and re-running `make`
+- Validated build completion by checking installation paths and executable presence
+
+---
+
+### **📌** Toolchain Verification
+
+- Verified OpenROAD functionality with simple test runs
+- Analyzed default design runs for timing, floorplan, and placement stages
+- Observed structured outputs in `logs/`, `reports/`, and `results/` directories
+
+---
+
+### 🛠️ Tools in Action
+
+✔ OpenROAD → Full RTL-to-GDS flow automation
+
+✔ Yosys → Logic synthesis integration
+
+✔ OpenSTA → Static timing verification
+
+✔ TritonTools → Floorplan, placement, CTS, and routing
+
+✔ Sky130 PDK → Physical library support
+
+---
+
+> 💡 “Week 5 was the bridge between design theory and physical implementation — setting up OpenROAD from scratch, debugging builds, and finally witnessing the open-source flow automate the complete SoC layout journey.” 🚀
+>
+
+
+---
+## 🙏 Special Thanks 👏  
+I sincerely thank all the organizations and their key members for making this program possible 💡:  
+
+- 🧑‍🏫 **VLSI System Design (VSD)** – [Kunal Ghosh](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/) for mentorship and vision.  
+- 🤝 **Efabless** – [Michael Wishart](https://www.linkedin.com/in/mike-wishart-81480612/) & [Mohamed Kassem](https://www.linkedin.com/in/mkkassem/) for enabling collaborative open-source chip design.  
+- 🏭 **[Semiconductor Laboratory (SCL)](https://www.scl.gov.in/)** – for PDK & foundry support.  
+- 🎓 **[IIT Gandhinagar (IITGN)](https://www.linkedin.com/school/indian-institute-of-technology-gandhinagar-iitgn-/?originalSubdomain=in)** – for on-site training & project facilitation.  
+- 🛠️ **Synopsys** – [Sassine Ghazi](https://www.linkedin.com/in/sassine-ghazi/) for providing industry-grade EDA tools under C2S program.  
+
+--- 
+👉 Main Repo Link :  
+[https://github.com/madhavanshree2006/RISC-V-SoC-Tapeout-Program](https://github.com/madhavanshree2006/RISC-V-SoC-Tapeout-Program)
